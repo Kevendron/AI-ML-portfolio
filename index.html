@@ -2,67 +2,128 @@
 <html>
 <head>
     <title>Kaustav Chakrabarti | AI & ML Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f5f5f5;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
         }
-        h1 {
-            color: #222;
-        }
-        .project {
-            background: white;
+
+        .container {
+            max-width: 900px;
+            margin: 80px auto;
             padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
+
+        h1 {
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            opacity: 0.8;
+            margin-bottom: 50px;
+        }
+
+        .project {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .project:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        h2 {
+            margin-top: 0;
+            font-weight: 600;
+        }
+
+        p {
+            opacity: 0.85;
+            line-height: 1.6;
+        }
+
         a {
-            color: #0366d6;
+            display: inline-block;
+            margin-top: 15px;
+            color: #00e0ff;
             text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
         }
+
+        a:hover {
+            color: #00ffcc;
+            transform: translateX(5px);
+        }
+
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            opacity: 0.6;
+            font-size: 14px;
+        }
+
     </style>
 </head>
 <body>
 
+<div class="container">
+
 <h1>AI & Machine Learning Portfolio</h1>
-<p>Kaustav Chakrabarti | NTU | AI/ML & Data Engineering Projects</p>
+<p class="subtitle">Kaustav Chakrabarti | NTU | Deep Learning · NLP · Computer Vision · Data Systems</p>
 
 <div class="project">
-    <h2> Ureca – Glaucoma Detection Report Generation using Retfound and LLM</h2>
-    <p>This project focuses on automated glaucoma detection and staging using multi-modal retinal imaging data. The objective was to improve diagnostic accuracy and reduce missed cases by leveraging both fundus photography (CFP) and Optical Coherence Tomography (OCT) images within a unified deep learning framework.</p>
+    <h2>🧠 URECA – Multi-Modal Glaucoma Detection</h2>
+    <p>
+        Fine-tuned RETFound on OCT and fundus images achieving 90% accuracy and 95% sensitivity.
+        Built dual-branch CNN pipeline integrating multi-modal retinal data for improved staging performance.
+    </p>
     <a href="https://github.com/Kevendron/Ureca_GAMMA_Task1" target="_blank">View Project →</a>
 </div>
 
 <div class="project">
-    <h2>Multi-Domain Neural Recommendation System (NLP-Based)</h2>
-    <p>This project implements a scalable, end-to-end neural recommendation system supporting multiple product domains (Electronics and Beauty), unified through a modern web interface. The system demonstrates how architecturally distinct deep learning models can coexist within a single deployment framework while delivering personalized recommendations.</p>
+    <h2>🛒 Neural Recommendation System</h2>
+    <p>
+        End-to-end recommendation engine supporting multiple domains using MLP projector and Two-Tower architectures.
+        Includes semantic search and Streamlit deployment.
+    </p>
     <a href="https://github.com/Kevendron/EE6405_NLP_RecommedationSystem" target="_blank">View Project →</a>
 </div>
 
 <div class="project">
-    <h2>Sentiment Classification using RNN and Transformer Architectures</h2>
-    <p>This project explores multiple deep learning approaches for binary sentiment classification (positive vs negative) using review text data. The objective was to systematically compare recurrent neural networks and transformer-based models within a unified training and evaluation framework.</p>
+    <h2>💬 Sentiment Classification (RNN + Transformers)</h2>
+    <p>
+        Implemented GRU, DistilBERT, and BERT+GRU hybrid models for binary sentiment classification.
+        Benchmarked contextual vs recurrent architectures.
+    </p>
     <a href="https://github.com/Shirshosinha/IE4483-Mini-Project" target="_blank">View Project →</a>
 </div>
 
 <div class="project">
-    <h2>Fashion Object Image Classification</h2>
-    <p>his project focuses on multi-class image classification of fashion objects using both traditional machine learning and deep learning approaches.
-
-The objective was to analyze a dataset of 50,000 labeled clothing images across 10 categories and compare model performance across different algorithmic paradigms.
-
-Three models were implemented and benchmarked:
-
-Convolutional Neural Network (CNN)
-
-Support Vector Machine (SVM)
-
-Random Forest Classifier
-
-The CNN model achieved 94% classification accuracy, outperforming traditional ML models and reducing misclassification errors by approximately 10%.</p>
+    <h2>👗 Fashion Image Classification</h2>
+    <p>
+        Compared CNN, SVM, and Random Forest on 50K fashion images.
+        CNN achieved 94% accuracy outperforming traditional ML baselines.
+    </p>
     <a href="https://github.com/Kevendron/Fashion-Dataset-project" target="_blank">View Project →</a>
+</div>
+
+<div class="footer">
+    © 2026 Kaustav Chakrabarti | Built with GitHub Pages
+</div>
+
 </div>
 
 </body>
